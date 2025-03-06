@@ -75,7 +75,7 @@ func TestEncapsulated(t *testing.T) {
 	assert.Equal(t, mcIgnCfg.Storage.Files[0].Path, "/etc/coreos/update.conf")
 	assert.Equal(t, mcIgnCfg.Storage.Files[1].Path, daemonconsts.MachineConfigEncapsulatedPath)
 
-	vers := []*semver.Version{semver.New("3.4.0"), semver.New("3.3.0"), semver.New("3.2.0"), semver.New("3.1.0"), semver.New("2.2.0")}
+	vers := []*semver.Version{semver.New("3.5.0"), semver.New("3.4.0"), semver.New("3.3.0"), semver.New("3.2.0"), semver.New("3.1.0"), semver.New("2.2.0")}
 	t.Logf("vers: %v\n", vers)
 	for _, v := range vers {
 		major := v.Slice()[0]
